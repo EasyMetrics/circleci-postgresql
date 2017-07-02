@@ -25,7 +25,7 @@ RUN rpm -vih https://download.postgresql.org/pub/repos/yum/$PG_VERSION/redhat/rh
 
 # Copy
 # ...
-COPY ./.docker/postgresql_scripts/postgresql-setup.sh /usr/pgsql-$PG_VERSION/bin/postgresql$PGVERSION-setup
+COPY ./.docker/postgresql-setup.sh /usr/pgsql-$PG_VERSION/bin/postgresql$PGVERSION-setup
 
 # Working directory
 # ...
@@ -37,9 +37,9 @@ RUN su root /usr/pgsql-$PG_VERSION/bin/postgresql$PGVERSION-setup initdb
 
 # Copy config file
 # ...
-COPY ./.docker/postgresql_scripts/postgresql.conf /var/lib/pgsql/$PG_VERSION/data/postgresql.conf
-COPY ./.docker/postgresql_scripts/pg_hba.conf /var/lib/pgsql/$PG_VERSION/data/pg_hba.conf
-COPY ./.docker/postgresql_scripts/postgresql.sh /usr/local/bin/postgresql.sh
+COPY ./.docker/postgresql.conf /var/lib/pgsql/$PG_VERSION/data/postgresql.conf
+COPY ./.docker/pg_hba.conf /var/lib/pgsql/$PG_VERSION/data/pg_hba.conf
+COPY ./.docker/postgresql.sh /usr/local/bin/postgresql.sh
 
 # Change own user
 # ...
