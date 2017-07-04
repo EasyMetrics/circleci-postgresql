@@ -3,7 +3,7 @@
     src="https://cdn.worldvectorlogo.com/logos/postgresql.svg">
   <a href="https://github.com/easymetrics">
     <img width="200" height="200" vspace="" hspace="25"
-      src="https://cdn.worldvectorlogo.com/logos/easymetrics.svg">
+      src="https://cdn.worldvectorlogo.com/logos/easymetrics-inc.svg">
   </a>
   <h1>PostgreSQL v9.4 Base</h1>
   <p>Postgres for local development & E2E tests in CircleCI 2.0.<p>
